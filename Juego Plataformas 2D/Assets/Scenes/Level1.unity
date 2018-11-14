@@ -2412,6 +2412,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &996970855 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4467598527588606, guid: 7647f8381dc86db48b99bff4b8acc637,
+    type: 2}
+  m_PrefabInternal: {fileID: 1042556783}
 --- !u!1 &1007095856
 GameObject:
   m_ObjectHideFlags: 0
@@ -3383,7 +3388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 4467598527588606, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
+  target: {fileID: 996970855}
   damping: 0.3
   lookAheadFactor: 1.5
   lookAheadReturnSpeed: 0.3
