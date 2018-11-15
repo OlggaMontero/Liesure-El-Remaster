@@ -1,13 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickUp : MonoBehaviour
 {
 
     public PlayerController player;
     public List<int> iList;
-    
+
+    [SerializeField] GameObject msgPanel;
+    [SerializeField] Text msgText;
+
 
     private bool inside;
 
@@ -31,6 +35,8 @@ public class PickUp : MonoBehaviour
         iList.Add(732);
         iList.Add(634);
 
+        msgPanel.SetActive(false);
+
 
 
     }
@@ -53,17 +59,15 @@ public class PickUp : MonoBehaviour
                         player.nMaleta = iList[Random.Range(0, iList.Count - 1)];
                         //Debug.Log(player.carry);
                         Debug.Log("Toma la maleta " + player.nMaleta);
+                        msgText.text = "Toma la maleta " + player.nMaleta;
+                        msgPanel.SetActive(true);
                     }
 
                     else
                     {
                         Debug.Log("Ya llevas encima la maleta " + player.nMaleta);
+                        msgPanel.SetActive(false);
                     }
-                }
-
-                else
-                {
-                    Debug.Log("No quedan más maletas");
                 }
             }
 
