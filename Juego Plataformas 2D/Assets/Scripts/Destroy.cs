@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour {
 
-    //public PlayerController player;
+    public AudioSource punch;
     public Spawner spawn;
+    public GameObject sprite;
 
     // Use this for initialization
     void Start () {
-		
+        punch = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -21,25 +22,31 @@ public class Destroy : MonoBehaviour {
     {
         if (col.gameObject.tag == "MainGround")
         {
-            Destroy(gameObject, 0.01f);
-            
+            sprite.GetComponent<Renderer>().enabled = false;
+            Destroy(gameObject, 0.9f);
+
         }
 
         if (col.gameObject.tag == "Player")
         {
             if (spawn.player.carry == true)
             {
+                
                 spawn.player.carry = false;
-                //Debug.Log(player.carry);
-                Debug.Log("Se te ha caído la maleta " + spawn.player.nMaleta);
+                punch.Play();
+                sprite.GetComponent<Renderer>().enabled = false;
             }
 
             else
             {
-                Debug.Log("Menos mal que no tenías ninguna maleta encima...");
+                
+                punch.Play();
+                sprite.GetComponent<Renderer>().enabled = false;
             }
 
-            Destroy(gameObject, 0.01f);
+            
+            Destroy(gameObject, 0.9f);
+            
             
         }
     }

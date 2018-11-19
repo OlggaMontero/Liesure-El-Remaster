@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class Deliver : MonoBehaviour {
@@ -9,18 +10,34 @@ public class Deliver : MonoBehaviour {
     public PlayerController player;
     public PickUp carrito;
     public float nHab;
+    public Timer timer;
+
+    [SerializeField] GameObject msgPanel;
+    [SerializeField] Text msgText;
 
     private bool inside;
+    //private float time;
+    //private bool fin;
 
     // Use this for initialization
     void Start () {
         inside = false;
-        
+        //time = 0.0f;
+        //fin = false;
+
+        msgPanel.SetActive(false);
+
+
+
     }
 
     void Update()
     {
         //Debug.Log(carrito.iList.Count);
+        //Debug.Log(time);
+        //Debug.Log(fin);
+
+        //time += Time.deltaTime;
 
         if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
         {
@@ -30,27 +47,31 @@ public class Deliver : MonoBehaviour {
                 {
                     if (player.nMaleta == nHab)
                     {
-                        Debug.Log("¡GENIAL! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
-                        
+                        //Debug.Log("¡GENIAL! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
+                        msgText.text = "¡GENIAL! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab;
+                        msgPanel.SetActive(true);
+                        timer.time += 10;
+
                     }
 
                     else
                     {
-                        Debug.Log("¡OH NO! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
+                        //Debug.Log("¡OH NO! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
+                        msgText.text = "¡OH NO! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab;
+                        msgPanel.SetActive(true);
+                        timer.time -= 10;
                     }
 
                     carrito.iList.Remove(player.nMaleta);
-                    if (carrito.iList.Count == 0)
-                    {
-                        SceneManager.LoadScene("inicio");
-                    }
                     player.carry = false;
                     
                 }
 
                 else
                 {
-                    Debug.Log("No tienes ninguna maleta encima");
+                    //Debug.Log("No tienes ninguna maleta encima");
+                    msgText.text = "No tienes ninguna maleta encima";
+                    msgPanel.SetActive(true);
                 }
             }
 
@@ -74,6 +95,7 @@ public class Deliver : MonoBehaviour {
         if (col.gameObject.tag == "Player")
         {
             inside = false;
+            msgPanel.SetActive(false);
 
         }
     }

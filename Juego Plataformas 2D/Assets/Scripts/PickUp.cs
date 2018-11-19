@@ -8,6 +8,9 @@ public class PickUp : MonoBehaviour
 
     public PlayerController player;
     public List<int> iList;
+    public Timer timer;
+
+    //private float time; 
 
     [SerializeField] GameObject msgPanel;
     [SerializeField] Text msgText;
@@ -37,6 +40,8 @@ public class PickUp : MonoBehaviour
 
         msgPanel.SetActive(false);
 
+        //time = 0.0f;
+
 
 
     }
@@ -44,34 +49,38 @@ public class PickUp : MonoBehaviour
     void Update()
     {
 
-        //Debug.Log("Pick up" +player.carry);
-        //Debug.Log(iList.Count);
-
-        if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+        //time += Time.deltaTime;
+        
+        if (timer.inicio)
         {
-            if (player != null)                             //Hay que tener cuidado con las referencias NULL
+            if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
             {
-                if (iList.Count > 0)
+                if (player != null)                             //Hay que tener cuidado con las referencias NULL
                 {
-                    if (player.carry == false)
+                    if (iList.Count > 0)
                     {
-                        player.carry = true;
-                        player.nMaleta = iList[Random.Range(0, iList.Count - 1)];
-                        //Debug.Log(player.carry);
-                        Debug.Log("Toma la maleta " + player.nMaleta);
-                        msgText.text = "Toma la maleta " + player.nMaleta;
-                        msgPanel.SetActive(true);
-                    }
+                        if (player.carry == false)
+                        {
+                            player.carry = true;
+                            player.nMaleta = iList[Random.Range(0, iList.Count - 1)];
+                            msgText.text = "Toma la maleta " + player.nMaleta;
+                            msgPanel.SetActive(true);
 
-                    else
-                    {
-                        Debug.Log("Ya llevas encima la maleta " + player.nMaleta);
-                        msgPanel.SetActive(false);
+                        }
+
+                        else
+                        {
+                            //Debug.Log("Ya llevas encima la maleta " + player.nMaleta);
+                            msgText.text = "Ya llevas encima la maleta " + player.nMaleta;
+                            msgPanel.SetActive(true);
+
+                        }
                     }
                 }
-            }
 
+            }
         }
+
 
     }
 
@@ -91,6 +100,7 @@ public class PickUp : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             inside = false;
+            msgPanel.SetActive(false);
 
         }
     }
