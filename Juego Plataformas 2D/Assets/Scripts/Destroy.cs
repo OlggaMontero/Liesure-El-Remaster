@@ -7,15 +7,20 @@ public class Destroy : MonoBehaviour {
     public AudioSource punch;
     public Spawner spawn;
     public GameObject sprite;
+    
+
+
 
     // Use this for initialization
     void Start () {
         punch = GetComponent<AudioSource>();
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
         //Debug.Log("Destroy"+spawn.player.carry);
+       
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -42,6 +47,7 @@ public class Destroy : MonoBehaviour {
                 
                 punch.Play();
                 sprite.GetComponent<Renderer>().enabled = false;
+                
             }
 
             

@@ -11,6 +11,12 @@ public class Deliver : MonoBehaviour {
     public PickUp carrito;
     public float nHab;
     public Timer timer;
+    public AudioSource audio;
+
+    public AudioClip tada;
+    public AudioClip buzz;
+    public AudioClip error;
+
 
     [SerializeField] GameObject msgPanel;
     [SerializeField] Text msgText;
@@ -22,8 +28,8 @@ public class Deliver : MonoBehaviour {
     // Use this for initialization
     void Start () {
         inside = false;
-        //time = 0.0f;
-        //fin = false;
+
+        audio = GetComponent<AudioSource>();
 
         msgPanel.SetActive(false);
 
@@ -38,6 +44,7 @@ public class Deliver : MonoBehaviour {
         //Debug.Log(fin);
 
         //time += Time.deltaTime;
+        
 
         if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
         {
@@ -51,6 +58,7 @@ public class Deliver : MonoBehaviour {
                         msgText.text = "¡GENIAL! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab;
                         msgPanel.SetActive(true);
                         timer.time += 10;
+                        audio.PlayOneShot(tada, 1.0f);
 
                     }
 
@@ -60,6 +68,7 @@ public class Deliver : MonoBehaviour {
                         msgText.text = "¡OH NO! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab;
                         msgPanel.SetActive(true);
                         timer.time -= 10;
+                        audio.PlayOneShot(buzz, 1.0f);
                     }
 
                     carrito.iList.Remove(player.nMaleta);
@@ -72,6 +81,7 @@ public class Deliver : MonoBehaviour {
                     //Debug.Log("No tienes ninguna maleta encima");
                     msgText.text = "No tienes ninguna maleta encima";
                     msgPanel.SetActive(true);
+                    audio.PlayOneShot(error, 1.0f);
                 }
             }
 

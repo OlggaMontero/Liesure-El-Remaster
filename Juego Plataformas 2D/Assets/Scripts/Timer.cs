@@ -32,7 +32,7 @@ public class Timer : MonoBehaviour {
         {
             msgPanel.SetActive(true);
             time -= Time.deltaTime;
-            msgText.text = "" + time.ToString("f0");
+            msgText.text = "Tiempo restante: " + time.ToString("f0");
             recompensa = Mathf.RoundToInt(time);
             //Debug.Log(recompensa);
         }
