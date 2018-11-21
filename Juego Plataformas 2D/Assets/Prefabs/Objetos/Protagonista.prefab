@@ -1347,7 +1347,7 @@ MonoBehaviour:
   maxSpeed: 3
   speed: 60
   grounded: 1
-  carry: 1
+  carry: 0
   jumpPower: 8
   nMaleta: 2
   control: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf, type: 2}
