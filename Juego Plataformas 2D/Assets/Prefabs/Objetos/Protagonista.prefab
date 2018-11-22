@@ -1349,7 +1349,7 @@ MonoBehaviour:
   grounded: 1
   carry: 0
   jumpPower: 8
-  nMaleta: 732
+  nMaleta: 531
   control: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf, type: 2}
   hold: 0
 --- !u!114 &114248849651677404
