@@ -1893,7 +1893,7 @@ MonoBehaviour:
   audio: {fileID: 0}
   tada: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
   buzz: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
-  error: {fileID: 8300000, guid: d3e5719435312eb4194abe35f7338e61, type: 3}
+  error: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
   msgPanel: {fileID: 1138247187}
   msgText: {fileID: 1955997348}
 --- !u!82 &418409977
@@ -2068,7 +2068,7 @@ Prefab:
         type: 2}
       propertyPath: error
       value: 
-      objectReference: {fileID: 8300000, guid: d3e5719435312eb4194abe35f7338e61, type: 3}
+      objectReference: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
     - target: {fileID: 114202342592784002, guid: 2676b83756aefff4ba16f5155213d00d,
         type: 2}
       propertyPath: buzz
@@ -3145,7 +3145,7 @@ MonoBehaviour:
   audio: {fileID: 0}
   tada: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
   buzz: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
-  error: {fileID: 8300000, guid: d3e5719435312eb4194abe35f7338e61, type: 3}
+  error: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
   msgPanel: {fileID: 1138247187}
   msgText: {fileID: 1955997348}
 --- !u!82 &672804254
@@ -5219,7 +5219,7 @@ MonoBehaviour:
   audio: {fileID: 0}
   tada: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
   buzz: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
-  error: {fileID: 8300000, guid: d3e5719435312eb4194abe35f7338e61, type: 3}
+  error: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
   msgPanel: {fileID: 1138247187}
   msgText: {fileID: 1955997348}
 --- !u!82 &1007095862
@@ -6346,7 +6346,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.21588892}
-  m_AnchoredPosition: {x: 0, y: 0.099975586}
+  m_AnchoredPosition: {x: 0, y: 0.099853516}
   m_SizeDelta: {x: 0, y: 0.2000122}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1138247189
@@ -6693,8 +6693,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -187, y: -49}
-  m_SizeDelta: {x: 305.5, y: 116.9}
+  m_AnchoredPosition: {x: -149.3, y: -87.8}
+  m_SizeDelta: {x: 538.6, y: 297.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1236780976
 MonoBehaviour:
@@ -6717,7 +6717,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6ead6df5d6bf9bf48817de962265bebe, type: 3}
-    m_FontSize: 100
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -7268,7 +7268,7 @@ Prefab:
         type: 2}
       propertyPath: error
       value: 
-      objectReference: {fileID: 8300000, guid: d3e5719435312eb4194abe35f7338e61, type: 3}
+      objectReference: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
     - target: {fileID: 114202342592784002, guid: 2676b83756aefff4ba16f5155213d00d,
         type: 2}
       propertyPath: buzz
@@ -7805,7 +7805,7 @@ MonoBehaviour:
   audio: {fileID: 0}
   tada: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
   buzz: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
-  error: {fileID: 8300000, guid: d3e5719435312eb4194abe35f7338e61, type: 3}
+  error: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
   msgPanel: {fileID: 1138247187}
   msgText: {fileID: 1955997348}
 --- !u!82 &1388045686
@@ -8299,7 +8299,7 @@ MonoBehaviour:
   audio: {fileID: 0}
   tada: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
   buzz: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
-  error: {fileID: 8300000, guid: d3e5719435312eb4194abe35f7338e61, type: 3}
+  error: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
   msgPanel: {fileID: 1138247187}
   msgText: {fileID: 1955997348}
 --- !u!82 &1491260466
@@ -9293,7 +9293,7 @@ MonoBehaviour:
   audio: {fileID: 0}
   tada: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
   buzz: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
-  error: {fileID: 8300000, guid: d3e5719435312eb4194abe35f7338e61, type: 3}
+  error: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
   msgPanel: {fileID: 1138247187}
   msgText: {fileID: 1955997348}
 --- !u!61 &1788238091
@@ -9416,6 +9416,144 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1788608373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1788608376}
+  - component: {fileID: 1788608375}
+  - component: {fileID: 1788608374}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1788608374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788608373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ed5d51eb7721643a37fb069d2a69cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: {fileID: 971026962}
+  music: {fileID: 0}
+--- !u!82 &1788608375
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788608373}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 854c6d7e4bcb3934ea4646bd8e885048, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1788608376
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788608373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.78098285, y: -1.0678245, z: -10.417969}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1791744644
 Prefab:
   m_ObjectHideFlags: 0
@@ -10278,8 +10416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -323, y: 23}
-  m_SizeDelta: {x: -60.3, y: -53}
+  m_AnchoredPosition: {x: 0.5, y: -1.9000244}
+  m_SizeDelta: {x: 921.2, y: 22.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1955997348
 MonoBehaviour:
@@ -10302,7 +10440,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6ead6df5d6bf9bf48817de962265bebe, type: 3}
-    m_FontSize: 100
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -10660,7 +10798,7 @@ Prefab:
         type: 2}
       propertyPath: error
       value: 
-      objectReference: {fileID: 8300000, guid: d3e5719435312eb4194abe35f7338e61, type: 3}
+      objectReference: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
     - target: {fileID: 114202342592784002, guid: 2676b83756aefff4ba16f5155213d00d,
         type: 2}
       propertyPath: buzz
@@ -11218,7 +11356,7 @@ Prefab:
         type: 2}
       propertyPath: error
       value: 
-      objectReference: {fileID: 8300000, guid: d3e5719435312eb4194abe35f7338e61, type: 3}
+      objectReference: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
     - target: {fileID: 114202342592784002, guid: 2676b83756aefff4ba16f5155213d00d,
         type: 2}
       propertyPath: buzz
