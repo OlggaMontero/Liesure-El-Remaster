@@ -2,23 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
-{
+public class PlayerController2 : MonoBehaviour {
 
     public float maxSpeed = 5f;
     public float speed = 2f;
     public bool grounded;
     public bool carry;
     public float jumpPower = 6.5f;
-    public int nMaleta;
-    public PickUp control;
+    public int nBandeja;
+    //public PickUp control;
     public bool hold;
 
 
     private Rigidbody2D rb2d;
     private Animator anim;
     private bool jump;
-    
+
 
     // Use this for initialization
     void Start()
@@ -26,19 +25,20 @@ public class PlayerController : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         carry = false;
-        nMaleta = 0;
+        nBandeja = 0;
         hold = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
         anim.SetFloat("MoveY", Mathf.Abs(rb2d.velocity.y));
         anim.SetBool("Grounded", grounded);
-        anim.SetBool("Carry", carry);
+        anim.SetFloat("Bandeja", nBandeja);
         anim.SetBool("Hold", hold);
-        carry = control.player.carry;
+        //carry = control.player.carry;
         //Debug.Log("PC" +carry);
         //Debug.Log("PC hold " + hold);
 
@@ -89,10 +89,6 @@ public class PlayerController : MonoBehaviour
             jump = false;
         }
 
-        
+
     }
-
-    
-
-
 }
