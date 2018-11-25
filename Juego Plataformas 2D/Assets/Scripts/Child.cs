@@ -39,13 +39,13 @@ public class Child : MonoBehaviour {
         if (target.position == start)
             {
                 target.position = end;
-                transform.localScale = new Vector3(2f, 2f, 2f);
+                transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
             }
 
         else
             {
                 target.position = start;
-                transform.localScale = new Vector3(-2f, 2f, 2f);
+                transform.localScale = new Vector3(-0.2f, 0.2f, 0.2f);
             }
         }
 

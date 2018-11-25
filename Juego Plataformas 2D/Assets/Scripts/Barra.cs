@@ -29,14 +29,14 @@ public class Barra : MonoBehaviour {
 
 
         iList.Add(-1);
-        iList.Add(-2);
+        /*iList.Add(-2);
         iList.Add(-3);
         iList.Add(-4);
         iList.Add(-5);
         iList.Add(1);
         iList.Add(2);
         iList.Add(-6);
-        iList.Add(-7);
+        iList.Add(-7);*/
         iList.Add(3);
 
         msgPanel.SetActive(false);
@@ -51,7 +51,7 @@ public class Barra : MonoBehaviour {
     {
 
 
-        print(player.nBandeja);
+        //print(player.nBandeja);
         //time += Time.deltaTime;
 
         if (timer.inicio == false)

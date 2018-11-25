@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour {
 
-    public AudioSource punch;
+    
     public Spawner spawn;
     public GameObject sprite;
-    
+
+
 
 
 
     // Use this for initialization
     void Start () {
-        punch = GetComponent<AudioSource>();
+        
         
 	}
 	
@@ -32,7 +33,7 @@ public class Destroy : MonoBehaviour {
 
         }
 
-        if (col.gameObject.tag == "Player")
+        /*if (col.gameObject.tag == "Player")
         {
             if (spawn.player.carry == true)
             {
@@ -54,6 +55,6 @@ public class Destroy : MonoBehaviour {
             Destroy(gameObject, 0.9f);
             
             
-        }
+        }*/
     }
 }

@@ -6,7 +6,9 @@ public class bso : MonoBehaviour {
 
     public Timer time;
     public AudioSource music;
-    private bool started;
+    public PlayerController player;
+    public bool started;
+
 
 
 
@@ -23,6 +25,7 @@ public class bso : MonoBehaviour {
             music.Play();
             started = true;
         }
+
 		
 	}
 }

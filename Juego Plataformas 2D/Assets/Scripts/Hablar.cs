@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Hablar : MonoBehaviour {
 
     public Timer timer;
+    public PlayerController player;
 
     private bool inside;
     private bool talk;
@@ -24,7 +25,7 @@ public class Hablar : MonoBehaviour {
 	void Update () {
         
 
-        if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+        if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
         {
             if (talk == false)
             {
