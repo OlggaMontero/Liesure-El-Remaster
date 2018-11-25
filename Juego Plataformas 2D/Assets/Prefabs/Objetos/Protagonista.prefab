@@ -1418,7 +1418,6 @@ MonoBehaviour:
   pause: 0
   bso: {fileID: 0}
   punch: {fileID: 0}
-  sprite: {fileID: 0}
 --- !u!114 &114248849651677404
 MonoBehaviour:
   m_ObjectHideFlags: 1
