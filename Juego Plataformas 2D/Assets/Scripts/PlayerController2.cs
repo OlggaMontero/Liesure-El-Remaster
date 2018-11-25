@@ -7,7 +7,7 @@ public class PlayerController2 : MonoBehaviour {
     public float maxSpeed = 5f;
     public float speed = 2f;
     public bool grounded;
-    public bool carry;
+    //public bool carry;
     public float jumpPower = 6.5f;
     public int nBandeja;
     //public PickUp control;
@@ -24,7 +24,7 @@ public class PlayerController2 : MonoBehaviour {
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        carry = false;
+        //carry = false;
         nBandeja = 0;
         hold = false;
     }

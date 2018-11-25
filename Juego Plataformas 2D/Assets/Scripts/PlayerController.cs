@@ -13,11 +13,18 @@ public class PlayerController : MonoBehaviour
     public int nMaleta;
     public PickUp control;
     public bool hold;
+    [SerializeField] GameObject msgPanel;
+    public bool pause;
+    public bso bso;
+
+    public AudioSource punch;
+    
 
 
     private Rigidbody2D rb2d;
     private Animator anim;
     private bool jump;
+    
     
 
     // Use this for initialization
@@ -28,6 +35,10 @@ public class PlayerController : MonoBehaviour
         carry = false;
         nMaleta = 0;
         hold = false;
+        pause = false;
+        msgPanel.SetActive(false);
+
+        punch = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -42,9 +53,35 @@ public class PlayerController : MonoBehaviour
         //Debug.Log("PC" +carry);
         //Debug.Log("PC hold " + hold);
 
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && grounded)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && grounded && pause == false)
         {
             jump = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton9))      //Botón START
+        {
+            pause = !pause;
+            if (pause)
+            {
+                bso.music.Pause();
+            }
+
+            else if (pause == false && bso.started == true && bso.time.inicio == true)
+            {
+                bso.music.Play();
+            }
+        }
+
+        if (pause)
+        {
+            msgPanel.SetActive(true);
+            Time.timeScale = 0;
+        }
+
+        else if (pause == false)
+        {
+            msgPanel.SetActive(false);
+            Time.timeScale = 1;
         }
     }
 
@@ -90,6 +127,37 @@ public class PlayerController : MonoBehaviour
         }
 
         
+
+        
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Maleta")
+        {
+            if (carry == true)
+            {
+
+                carry = false;
+                punch.Play();
+                
+                col.gameObject.SetActive(false);
+            }
+
+            else
+            {
+
+                punch.Play();
+                col.gameObject.SetActive(false);
+                
+
+            }
+
+
+            Destroy(col.gameObject, 0.9f);
+
+
+        }
     }
 
     

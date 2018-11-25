@@ -10,6 +10,7 @@ TagManager:
   - MainGround
   - PlayerSuelo
   - Botones
+  - Maleta
   layers:
   - Default
   - TransparentFX

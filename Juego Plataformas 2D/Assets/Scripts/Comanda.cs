@@ -1,58 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
+public class Comanda : MonoBehaviour {
 
-public class Deliver : MonoBehaviour {
-
-    public PlayerController player;
-    public PickUp carrito;
-    public float nHab;
-    public Timer timer;
-    public AudioSource audio;
-
-    public AudioClip tada;
-    public AudioClip buzz;
-    public AudioClip error;
-
-
-    [SerializeField] GameObject msgPanel;
-    [SerializeField] Text msgText;
+    public PlayerController2 player;
+    public Barra barra;
 
     private bool inside;
-    //private float time;
-    //private bool fin;
-
+	
     // Use this for initialization
-    void Start () {
+	void Start () {
         inside = false;
+	}
+	
+	// Update is called once per frame
+	void Update () {
 
-        audio = GetComponent<AudioSource>();
-
-        msgPanel.SetActive(false);
-
-
-
-    }
-
-    void Update()
-    {
-        //Debug.Log(carrito.iList.Count);
-        //Debug.Log(time);
-        //Debug.Log(fin);
-
-        //time += Time.deltaTime;
-        
-
-        if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+        if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
         {
             if (player != null)                             //Hay que tener cuidado con las referencias NULL
             {
-                if (player.carry == true)
+                if (player.nBandeja != 0)
                 {
-                    if (player.nMaleta == nHab)
+                    /*if (player.nMaleta == nHab)
                     {
                         //Debug.Log("¡GENIAL! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
                         msgText.text = "¡GENIAL! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab;
@@ -69,27 +40,26 @@ public class Deliver : MonoBehaviour {
                         msgPanel.SetActive(true);
                         timer.time -= 10;
                         audio.PlayOneShot(buzz, 1.0f);
-                    }
+                    }*/
 
-                    carrito.iList.Remove(player.nMaleta);
-                    player.carry = false;
-                    
+                    barra.iList.Remove(player.nBandeja);
+                    player.nBandeja = 0;
+
                 }
 
                 else
                 {
-                    //Debug.Log("No tienes ninguna maleta encima");
-                    msgText.text = "No tienes ninguna maleta encima";
-                    msgPanel.SetActive(true);
-                    audio.PlayOneShot(error, 1.0f);
+                    Debug.Log("No traes comida!!");
+                    //msgText.text = "No tienes ninguna maleta encima";
+                    //msgPanel.SetActive(true);
+                    //audio.PlayOneShot(error, 1.0f);
+
                 }
             }
 
         }
 
     }
-
-
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -105,11 +75,8 @@ public class Deliver : MonoBehaviour {
         if (col.gameObject.tag == "Player")
         {
             inside = false;
-            msgPanel.SetActive(false);
+            //msgPanel.SetActive(false);
 
         }
     }
-
-
-
 }

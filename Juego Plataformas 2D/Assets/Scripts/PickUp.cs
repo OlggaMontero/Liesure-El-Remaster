@@ -53,7 +53,7 @@ public class PickUp : MonoBehaviour
         
         if (timer.inicio)
         {
-            if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+            if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
             {
                 if (player != null)                             //Hay que tener cuidado con las referencias NULL
                 {
