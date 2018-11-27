@@ -1805,8 +1805,8 @@ MonoBehaviour:
   nHab: 73
   timer: {fileID: 971026962}
   audio: {fileID: 0}
-  tada: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
-  buzz: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
+  tada: {fileID: 8300000, guid: d3f81b3357af6ce46b6bd12d63f413e7, type: 3}
+  buzz: {fileID: 8300000, guid: e40d05fbac4bbaa438e2cc3acc5016d9, type: 3}
   error: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
   msgPanel: {fileID: 1138247187}
   msgText: {fileID: 1955997348}
@@ -1987,12 +1987,12 @@ Prefab:
         type: 2}
       propertyPath: buzz
       value: 
-      objectReference: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
+      objectReference: {fileID: 8300000, guid: e40d05fbac4bbaa438e2cc3acc5016d9, type: 3}
     - target: {fileID: 114202342592784002, guid: 2676b83756aefff4ba16f5155213d00d,
         type: 2}
       propertyPath: tada
       value: 
-      objectReference: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
+      objectReference: {fileID: 8300000, guid: d3f81b3357af6ce46b6bd12d63f413e7, type: 3}
     - target: {fileID: 114202342592784002, guid: 2676b83756aefff4ba16f5155213d00d,
         type: 2}
       propertyPath: player
@@ -3062,8 +3062,8 @@ MonoBehaviour:
   nHab: 7
   timer: {fileID: 971026962}
   audio: {fileID: 0}
-  tada: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
-  buzz: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
+  tada: {fileID: 8300000, guid: d3f81b3357af6ce46b6bd12d63f413e7, type: 3}
+  buzz: {fileID: 8300000, guid: e40d05fbac4bbaa438e2cc3acc5016d9, type: 3}
   error: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
   msgPanel: {fileID: 1138247187}
   msgText: {fileID: 1955997348}
@@ -5286,8 +5286,8 @@ MonoBehaviour:
   nHab: 531
   timer: {fileID: 971026962}
   audio: {fileID: 0}
-  tada: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
-  buzz: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
+  tada: {fileID: 8300000, guid: d3f81b3357af6ce46b6bd12d63f413e7, type: 3}
+  buzz: {fileID: 8300000, guid: e40d05fbac4bbaa438e2cc3acc5016d9, type: 3}
   error: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
   msgPanel: {fileID: 1138247187}
   msgText: {fileID: 1955997348}
@@ -7404,12 +7404,12 @@ Prefab:
         type: 2}
       propertyPath: buzz
       value: 
-      objectReference: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
+      objectReference: {fileID: 8300000, guid: e40d05fbac4bbaa438e2cc3acc5016d9, type: 3}
     - target: {fileID: 114202342592784002, guid: 2676b83756aefff4ba16f5155213d00d,
         type: 2}
       propertyPath: tada
       value: 
-      objectReference: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
+      objectReference: {fileID: 8300000, guid: d3f81b3357af6ce46b6bd12d63f413e7, type: 3}
     - target: {fileID: 114202342592784002, guid: 2676b83756aefff4ba16f5155213d00d,
         type: 2}
       propertyPath: player
@@ -7841,7 +7841,7 @@ MonoBehaviour:
   nHab: 331
   timer: {fileID: 971026962}
   audio: {fileID: 0}
-  tada: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
+  tada: {fileID: 8300000, guid: d3f81b3357af6ce46b6bd12d63f413e7, type: 3}
   buzz: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
   error: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
   msgPanel: {fileID: 1138247187}
@@ -8335,8 +8335,8 @@ MonoBehaviour:
   nHab: 53
   timer: {fileID: 971026962}
   audio: {fileID: 0}
-  tada: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
-  buzz: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
+  tada: {fileID: 8300000, guid: d3f81b3357af6ce46b6bd12d63f413e7, type: 3}
+  buzz: {fileID: 8300000, guid: e40d05fbac4bbaa438e2cc3acc5016d9, type: 3}
   error: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
   msgPanel: {fileID: 1138247187}
   msgText: {fileID: 1955997348}
@@ -9324,8 +9324,8 @@ MonoBehaviour:
   nHab: 46
   timer: {fileID: 971026962}
   audio: {fileID: 0}
-  tada: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
-  buzz: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
+  tada: {fileID: 8300000, guid: d3f81b3357af6ce46b6bd12d63f413e7, type: 3}
+  buzz: {fileID: 8300000, guid: e40d05fbac4bbaa438e2cc3acc5016d9, type: 3}
   error: {fileID: 8300000, guid: 5e549ca28d1ef474db2a7067539ea9a0, type: 3}
   msgPanel: {fileID: 1138247187}
   msgText: {fileID: 1955997348}
@@ -10839,12 +10839,12 @@ Prefab:
         type: 2}
       propertyPath: buzz
       value: 
-      objectReference: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
+      objectReference: {fileID: 8300000, guid: e40d05fbac4bbaa438e2cc3acc5016d9, type: 3}
     - target: {fileID: 114202342592784002, guid: 2676b83756aefff4ba16f5155213d00d,
         type: 2}
       propertyPath: tada
       value: 
-      objectReference: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
+      objectReference: {fileID: 8300000, guid: d3f81b3357af6ce46b6bd12d63f413e7, type: 3}
     - target: {fileID: 114202342592784002, guid: 2676b83756aefff4ba16f5155213d00d,
         type: 2}
       propertyPath: player
@@ -11402,12 +11402,12 @@ Prefab:
         type: 2}
       propertyPath: buzz
       value: 
-      objectReference: {fileID: 8300000, guid: e094566f9c8384c45a3232b436c2ffe6, type: 3}
+      objectReference: {fileID: 8300000, guid: e40d05fbac4bbaa438e2cc3acc5016d9, type: 3}
     - target: {fileID: 114202342592784002, guid: 2676b83756aefff4ba16f5155213d00d,
         type: 2}
       propertyPath: tada
       value: 
-      objectReference: {fileID: 8300000, guid: d4dd9a5e0fb83a64e884aeb495477478, type: 3}
+      objectReference: {fileID: 8300000, guid: d3f81b3357af6ce46b6bd12d63f413e7, type: 3}
     - target: {fileID: 114202342592784002, guid: 2676b83756aefff4ba16f5155213d00d,
         type: 2}
       propertyPath: player
