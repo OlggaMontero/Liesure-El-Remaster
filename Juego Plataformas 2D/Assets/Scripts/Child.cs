@@ -6,16 +6,22 @@ public class Child : MonoBehaviour {
 
     public Transform target;
     public float speed;
+    public Rigidbody2D rb2d;
 
     private Vector3 start, end;
+    private Vector2 left, right;
+    private bool ida;
 
     // Use this for initialization
     void Start () {
+        ida = true;
         if (target != null)
         {
             target.parent = null;
             start = transform.position;
             end = target.position;
+            left = new Vector2(-1.0f, 1.0f);
+            right = new Vector2(1.0f, 1.0f);
         }
     }
 	
@@ -40,15 +46,34 @@ public class Child : MonoBehaviour {
             {
                 target.position = end;
                 transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+                ida = true;
             }
 
         else
             {
                 target.position = start;
                 transform.localScale = new Vector3(-0.2f, 0.2f, 0.2f);
+                ida = false;
             }
         }
 
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            if (ida)
+            {
+                rb2d.AddForce(left * 5, ForceMode2D.Impulse);
+            }
+
+            else
+            {
+                rb2d.AddForce(right * 5, ForceMode2D.Impulse);
+            }
+
+        }
     }
 }
 

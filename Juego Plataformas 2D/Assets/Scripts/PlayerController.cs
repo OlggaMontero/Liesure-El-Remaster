@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
             jump = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton9))      //Botón START
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton7))      //Botón START
         {
             pause = !pause;
             if (pause)

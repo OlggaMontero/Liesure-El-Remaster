@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CheckGround : MonoBehaviour {
 
-	private PlayerController player;
+	private PlayerController2 player;
     private Rigidbody2D rb2d;
     
 
@@ -13,7 +13,7 @@ public class CheckGround : MonoBehaviour {
     // Use this for initialization
 	void Start ()
     {
-        player = GetComponentInParent<PlayerController>(); //Poder acceder a las variables públicas de player
+        player = GetComponentInParent<PlayerController2>(); //Poder acceder a las variables públicas de player
         rb2d = GetComponentInParent<Rigidbody2D>();
         
     }
