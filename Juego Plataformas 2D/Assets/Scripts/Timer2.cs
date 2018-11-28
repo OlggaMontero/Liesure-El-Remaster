@@ -15,6 +15,7 @@ public class Timer2 : MonoBehaviour {
     public float auxiliarTime;
     public bool inicio;
     public int recompensa;
+    public Counter counter;
 
     // Use this for initialization
     void Start()
@@ -41,9 +42,14 @@ public class Timer2 : MonoBehaviour {
         }
 
 
-        if (time < 0)
+        if (counter.contador > 3)
         {
-            SceneManager.LoadScene(2);      //reiniciar el nivel
+            auxiliarTime += Time.deltaTime;
+            if (auxiliarTime > 1)
+            {
+                SceneManager.LoadScene(3);      //reiniciar el nivel
+            }
+            
         }
 
 

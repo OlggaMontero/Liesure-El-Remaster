@@ -90,6 +90,12 @@ public class Barra : MonoBehaviour {
 
                         }
                     }
+
+                    else
+                    {
+                        msgText.text = "¡¡Nos hemos quedado sin comida!!";
+                        msgPanel.SetActive(true);
+                    }
                 }
 
             }

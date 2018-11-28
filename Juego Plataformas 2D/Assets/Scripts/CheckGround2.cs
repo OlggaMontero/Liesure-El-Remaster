@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckGround : MonoBehaviour {
+public class CheckGround2 : MonoBehaviour {
 
-	private PlayerController player;
+    private PlayerController2 player;
     private Rigidbody2D rb2d;
-    
 
 
-    
+
+
     // Use this for initialization
-	void Start ()
+    void Start()
     {
-        player = GetComponentInParent<PlayerController>(); //Poder acceder a las variables públicas de player
+        player = GetComponentInParent<PlayerController2>(); //Poder acceder a las variables públicas de player
         rb2d = GetComponentInParent<Rigidbody2D>();
-        
+
     }
 
     void OnCollisionEnter2D(Collision2D col)        //La primera vez que toca una plataforma
@@ -25,13 +25,13 @@ public class CheckGround : MonoBehaviour {
             rb2d.velocity = new Vector3(0f, 0f, 0f);
             player.transform.parent = col.transform;
             player.grounded = true;
-            
+
         }
     }
-	
-	void OnCollisionStay2D(Collision2D col)             //Comprobar el objeto contra el que se está colisionando
+
+    void OnCollisionStay2D(Collision2D col)             //Comprobar el objeto contra el que se está colisionando
     {
-        if(col.gameObject.tag == "Ground")
+        if (col.gameObject.tag == "Ground")
         {
             player.grounded = true;
             //Debug.Log("Hello");
@@ -50,12 +50,12 @@ public class CheckGround : MonoBehaviour {
 
     }
 
-    void OnCollisionExit2D (Collision2D col)
+    void OnCollisionExit2D(Collision2D col)
     {
         if (col.gameObject.tag == "Ground")
         {
             player.grounded = false;
-            
+
         }
 
         if (col.gameObject.tag == "MainGround")
@@ -69,5 +69,4 @@ public class CheckGround : MonoBehaviour {
             player.grounded = false;
         }
     }
-
 }
