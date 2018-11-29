@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; //OJO
 
 public class PlayerController : MonoBehaviour
 {
@@ -56,6 +57,11 @@ public class PlayerController : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && grounded && pause == false)
         {
             jump = true;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A)))      //atajo para pasar al restaurante
+        {
+            SceneManager.LoadScene(3);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton7))      //Botón START

@@ -6,10 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Timer2 : MonoBehaviour {
 
-    [SerializeField]
-    GameObject msgPanel;
-    [SerializeField]
-    Text msgText;
+    [SerializeField] GameObject msgPanel;
+    [SerializeField] Text msgText;
 
     public float time;
     public float auxiliarTime;
@@ -20,7 +18,7 @@ public class Timer2 : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        time = 120.0f;
+        time = 120.0f; //120
         auxiliarTime = 0.0f;
 
         inicio = false;
@@ -50,6 +48,11 @@ public class Timer2 : MonoBehaviour {
                 SceneManager.LoadScene(3);      //reiniciar el nivel
             }
             
+        }
+
+        if (time < 0)
+        {
+            SceneManager.LoadScene(3);      //hemos ganado, pasar a la siguiente escena
         }
 
 

@@ -11,6 +11,7 @@ TagManager:
   - PlayerSuelo
   - Botones
   - Maleta
+  - timer
   layers:
   - Default
   - TransparentFX

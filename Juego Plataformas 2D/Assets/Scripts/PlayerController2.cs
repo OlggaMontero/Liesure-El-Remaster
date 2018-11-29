@@ -12,6 +12,9 @@ public class PlayerController2 : MonoBehaviour {
     public int nBandeja;
     //public PickUp control;
     public bool hold;
+    public bool pause;
+    public bso2 bso;
+    [SerializeField] GameObject msgPanel;
 
 
     private Rigidbody2D rb2d;
@@ -27,6 +30,8 @@ public class PlayerController2 : MonoBehaviour {
         //carry = false;
         nBandeja = 0;
         hold = false;
+        pause = false;
+        msgPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -42,9 +47,35 @@ public class PlayerController2 : MonoBehaviour {
         //Debug.Log("PC" +carry);
         //Debug.Log("PC hold " + hold);
 
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && grounded)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && grounded && pause == false)
         {
             jump = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton7))      //Botón START
+        {
+            pause = !pause;
+            if (pause)
+            {
+                bso.music.Pause();
+            }
+
+            else if (pause == false && bso.started == true && bso.time.inicio == true)
+            {
+                bso.music.Play();
+            }
+        }
+
+        if (pause)
+        {
+            msgPanel.SetActive(true);
+            Time.timeScale = 0;
+        }
+
+        else if (pause == false)
+        {
+            msgPanel.SetActive(false);
+            Time.timeScale = 1;
         }
     }
 

@@ -29,14 +29,14 @@ public class Barra : MonoBehaviour {
 
 
         iList.Add(-1);
-        /*iList.Add(-2);
+        iList.Add(-2);
         iList.Add(-3);
         iList.Add(-4);
         iList.Add(-5);
         iList.Add(1);
         iList.Add(2);
         iList.Add(-6);
-        iList.Add(-7);*/
+        iList.Add(-7);
         iList.Add(3);
 
         msgPanel.SetActive(false);
@@ -56,7 +56,7 @@ public class Barra : MonoBehaviour {
 
         if (timer.inicio == false)
         {
-            if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+            if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
             {
                 introduction = true;
                 msgText.text = "Pulsa CUADRADO para coger bandejas y entrégalas a quienes tengan hambre";
@@ -67,7 +67,7 @@ public class Barra : MonoBehaviour {
 
         else if (timer.inicio)
         {
-            if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+            if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
             {
                 if (player != null)                             //Hay que tener cuidado con las referencias NULL
                 {

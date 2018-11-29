@@ -13,18 +13,24 @@ public class Comanda : MonoBehaviour {
     public Counter counter;
     public bool buffet;
     //será true para la mesa buffet y false para el resto
+    public updScore control;
 
     private bool inside;
+    
 	
     // Use this for initialization
 	void Start () {
         inside = false;
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+        
+        
+
+        if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
         {
             if (player != null)                             //Hay que tener cuidado con las referencias NULL
             {
@@ -36,6 +42,7 @@ public class Comanda : MonoBehaviour {
                         {
                             //Debug.Log("¡GENIAL! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
                             msgText.text = "¡GRACIAS! Nos moríamos de hambre.";
+                            control.recompensa2 += 10;
                             msgPanel.SetActive(true);
                             hambre.on = false;
                             hambre.auxTime = 0;
@@ -49,6 +56,10 @@ public class Comanda : MonoBehaviour {
                         {
                             //Debug.Log("¡OH NO! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
                             msgText.text = "Nosotros no habíamos pedido nada.";
+                            if (control.recompensa2 -5 >= 0)
+                            {
+                                control.recompensa2 -= 5;
+                            }
                             msgPanel.SetActive(true);
                             //timer.time -= 10;
                             //audio.PlayOneShot(buzz, 1.0f);
@@ -58,6 +69,10 @@ public class Comanda : MonoBehaviour {
                     else                    //le damos una bandeja de plata a la mesa buffet
                     {
                         msgText.text = "¡¡Esto es una porquería!!";
+                        if (control.recompensa2 - 10 >= 0)
+                        {
+                            control.recompensa2 -= 10;
+                        }
                         msgPanel.SetActive(true);
                     }
 
@@ -74,6 +89,10 @@ public class Comanda : MonoBehaviour {
                         {
                             //Debug.Log("¡GENIAL! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
                             msgText.text = "¡Vaya! Esto es incluso mejor que lo que habíamos pedido.";
+                            if (control.recompensa2 - 5 >= 0)
+                            {
+                                control.recompensa2 -= 5;
+                            }
                             msgPanel.SetActive(true);
                             hambre.on = false;
                             hambre.auxTime = 0;
@@ -87,6 +106,10 @@ public class Comanda : MonoBehaviour {
                         {
                             //Debug.Log("¡OH NO! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
                             msgText.text = "Nosotros no habíamos pedido nada. Y menos tan caro.";
+                            if (control.recompensa2 - 10 >= 0)
+                            {
+                                control.recompensa2 -= 10;
+                            }
                             msgPanel.SetActive(true);
                             //timer.time -= 10;
                             //audio.PlayOneShot(buzz, 1.0f);
@@ -96,6 +119,7 @@ public class Comanda : MonoBehaviour {
                     else                    //le damos una bandeja de oro a la mesa buffet
                     {
                         msgText.text = "¡¡Está todo buenísimo!!";
+                        control.recompensa2 += 10;
                         msgPanel.SetActive(true);
                     }
 
@@ -107,6 +131,10 @@ public class Comanda : MonoBehaviour {
                 {
                     //Debug.Log("No traes comida!!");
                     msgText.text = "¡No traes comida!";
+                    if (control.recompensa2 - 1 >= 0)
+                    {
+                        control.recompensa2 -= 1;
+                    }
                     msgPanel.SetActive(true);
                     //audio.PlayOneShot(error, 1.0f);
 

@@ -6,7 +6,7 @@ public class bso2 : MonoBehaviour {
 
     public Timer2 time;
     public AudioSource music;
-    private bool started;
+    public bool started;
 
     // Use this for initialization
     void Start()
