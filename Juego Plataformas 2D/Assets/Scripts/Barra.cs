@@ -35,9 +35,31 @@ public class Barra : MonoBehaviour {
         iList.Add(-5);
         iList.Add(1);
         iList.Add(2);
+        iList.Add(3);
         iList.Add(-6);
         iList.Add(-7);
+        iList.Add(-1);
+        iList.Add(-2);
+        iList.Add(-3);
+        iList.Add(-4);
+        iList.Add(-5);
+        iList.Add(1);
+        iList.Add(2);
         iList.Add(3);
+        iList.Add(-6);
+        iList.Add(-7);
+        iList.Add(-1);
+        iList.Add(-2);
+        iList.Add(-3);
+        iList.Add(-4);
+        iList.Add(-5);
+        iList.Add(1);
+        iList.Add(2);
+        iList.Add(3);
+        iList.Add(-6);
+        iList.Add(-7);
+
+
 
         msgPanel.SetActive(false);
 

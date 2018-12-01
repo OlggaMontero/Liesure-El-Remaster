@@ -59,10 +59,10 @@ public class PlayerController : MonoBehaviour
             jump = true;
         }
 
-        if ((Input.GetKeyDown(KeyCode.A)))      //atajo para pasar al restaurante
+        /*if ((Input.GetKeyDown(KeyCode.A)))      //atajo para pasar al restaurante
         {
             SceneManager.LoadScene(3);
-        }
+        }*/
 
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton7))      //Botón START
         {
