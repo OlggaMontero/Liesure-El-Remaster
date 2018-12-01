@@ -1010,7 +1010,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1814611530}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &232061384
 SkinnedMeshRenderer:
@@ -2235,7 +2235,7 @@ Transform:
   m_Children:
   - {fileID: 1777193975}
   m_Father: {fileID: 1814611530}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &494107636
 Transform:
@@ -4202,7 +4202,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1814611530}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &820326516
 SkinnedMeshRenderer:
@@ -4778,7 +4778,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1814611530}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &923805693
 SkinnedMeshRenderer:
@@ -4936,7 +4936,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4394609575330282, guid: 0b4d0f973c617564e8369e8547b49390, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.11
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 4394609575330282, guid: 0b4d0f973c617564e8369e8547b49390, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6074,7 +6074,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1814611530}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &1050151511
 SkinnedMeshRenderer:
@@ -7671,7 +7671,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4759429527525934, guid: 2f9175a5c599fc54a9440ec26cbf6430, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 8.959981
+      value: 8.83
       objectReference: {fileID: 0}
     - target: {fileID: 4759429527525934, guid: 2f9175a5c599fc54a9440ec26cbf6430, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8925,6 +8925,81 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f9175a5c599fc54a9440ec26cbf6430, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1598218412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1598218413}
+  - component: {fileID: 1598218414}
+  m_Layer: 0
+  m_Name: Ojos Botones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1598218413
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1598218412}
+  m_LocalRotation: {x: -0, y: 0, z: -0.14081134, w: 0.9900364}
+  m_LocalPosition: {x: 0.36205104, y: 2.702779, z: -0.2528192}
+  m_LocalScale: {x: 0.97842675, y: 0.9924278, z: 0.9784266}
+  m_Children: []
+  m_Father: {fileID: 1814611530}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 16.19}
+--- !u!212 &1598218414
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1598218412}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: c7233453034489543be8168e41fb8fde, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.03, y: 0.61}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!4 &1599226601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4717545527161596, guid: 10850bd74e7a1664ab34e79d3cab46e4,
@@ -10111,6 +10186,7 @@ Transform:
   m_Children:
   - {fileID: 223808223}
   - {fileID: 338222730}
+  - {fileID: 1598218413}
   - {fileID: 1050151510}
   - {fileID: 923805692}
   - {fileID: 820326515}
