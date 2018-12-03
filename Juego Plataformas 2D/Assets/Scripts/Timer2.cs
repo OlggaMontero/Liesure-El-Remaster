@@ -52,7 +52,7 @@ public class Timer2 : MonoBehaviour {
 
         if (time < 0)
         {
-            SceneManager.LoadScene(3);      //hemos ganado, pasar a la siguiente escena
+            SceneManager.LoadScene(5);      //hemos ganado, pasar a la siguiente escena
         }
 
 

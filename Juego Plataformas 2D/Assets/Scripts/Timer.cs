@@ -48,7 +48,7 @@ public class Timer : MonoBehaviour {
             auxiliarTime += Time.deltaTime;
             if (auxiliarTime > 1)
             {
-                SceneManager.LoadScene("inicio");
+                SceneManager.LoadScene(3); //nivel 2
             }
             
 

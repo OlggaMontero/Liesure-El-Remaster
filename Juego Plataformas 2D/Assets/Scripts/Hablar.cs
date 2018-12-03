@@ -17,7 +17,8 @@ public class Hablar : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        msgPanel.SetActive(false);
+        msgText.text = "Habla con el botones";
+        msgPanel.SetActive(true);
 
     }
 	
@@ -30,7 +31,7 @@ public class Hablar : MonoBehaviour {
             if (talk == false)
             {
                 talk = true;
-                msgText.text = "Pulsa CUADRADO para coger maletas del carrito y dejarlas en la habitación correspondiente. ¡Ojo con el tiempo y con las maletas!";
+                msgText.text = "Coge las maletas del carrito y déjalas en las habitaciones correspondientes. ¡Ojo con el tiempo y con las maletas que caen!";
                 msgPanel.SetActive(true);
             }
 

@@ -60,8 +60,8 @@ public class Barra : MonoBehaviour {
         iList.Add(-7);
 
 
-
-        msgPanel.SetActive(false);
+        msgText.text = "Habla con cocina";
+        msgPanel.SetActive(true);
 
         //time = 0.0f;
 
@@ -81,7 +81,7 @@ public class Barra : MonoBehaviour {
             if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
             {
                 introduction = true;
-                msgText.text = "Pulsa CUADRADO para coger bandejas y entrégalas a quienes tengan hambre";
+                msgText.text = "Las bandejas de plata son para las mesas que piden y las de oro para el buffet. ¡Cuidado con los hambrientos o te quedarás sin comanda!";
                 msgPanel.SetActive(true);
             }
         }
