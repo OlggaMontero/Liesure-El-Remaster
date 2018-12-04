@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour
             if (pause)
             {
                 bso.music.Pause();
+                PlayerPrefs.SetInt("pausas", PlayerPrefs.GetInt("pausas")+1);
             }
 
             else if (pause == false && bso.started == true && bso.time.inicio == true)

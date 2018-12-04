@@ -7,6 +7,7 @@ public class Score : MonoBehaviour {
     public int recompensa1;
     public int recompensa2;
     public int recompensa;
+    public int pausas;
 
     public Timer timer;
     public int scene;
@@ -20,10 +21,12 @@ public class Score : MonoBehaviour {
             recompensa = 0;
             recompensa1 = 0;
             recompensa2 = 0;
+            pausas = 0;
 
             PlayerPrefs.SetInt("recompensa0", recompensa);
             PlayerPrefs.SetInt("recompensa1", recompensa1);
             PlayerPrefs.SetInt("recompensa2", recompensa2);
+            PlayerPrefs.SetInt("pausas", pausas);
         }
         
         else if (scene == 1)    //recompensa nivel 1
@@ -66,6 +69,7 @@ public class Score : MonoBehaviour {
         Debug.Log("0: " + PlayerPrefs.GetInt("recompensa0"));
         Debug.Log("1: " + PlayerPrefs.GetInt("recompensa1"));
         Debug.Log("2: " + PlayerPrefs.GetInt("recompensa2"));
+        Debug.Log("pausas: " + PlayerPrefs.GetInt("pausas"));
 
 
 
