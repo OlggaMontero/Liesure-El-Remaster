@@ -7201,6 +7201,7 @@ MonoBehaviour:
   recompensa1: 0
   recompensa2: 0
   recompensa: 0
+  pausas: 0
   timer: {fileID: 0}
   scene: 2
 --- !u!4 &416560832
@@ -25699,7 +25700,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 854c6d7e4bcb3934ea4646bd8e885048, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 206e40752007e8149bbfda18c1d08603, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
