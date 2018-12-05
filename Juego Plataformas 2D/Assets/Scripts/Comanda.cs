@@ -68,7 +68,7 @@ public class Comanda : MonoBehaviour {
                             }
                             msgPanel.SetActive(true);
                             //timer.time -= 10;
-                            audio.PlayOneShot(error, 1.0f);
+                            audio.PlayOneShot(error, 5.0f);
                         }
                     }
 
@@ -80,7 +80,7 @@ public class Comanda : MonoBehaviour {
                             control.recompensa2 -= 10;
                         }
                         msgPanel.SetActive(true);
-                        audio.PlayOneShot(error, 1.0f);
+                        audio.PlayOneShot(mal, 1.0f);
                     }
 
                     barra.iList.Remove(player.nBandeja);
@@ -105,7 +105,7 @@ public class Comanda : MonoBehaviour {
                             hambre.auxTime = 0;
                             counter.contador--;
                             //timer.time += 10;
-                            audio.PlayOneShot(bien, 1.0f);
+                            audio.PlayOneShot(error, 5.0f);
 
                         }
 
@@ -119,7 +119,7 @@ public class Comanda : MonoBehaviour {
                             }
                             msgPanel.SetActive(true);
                             //timer.time -= 10;
-                            audio.PlayOneShot(error, 1.0f);
+                            audio.PlayOneShot(mal, 1.0f);
                         }
                     }
 
@@ -144,7 +144,7 @@ public class Comanda : MonoBehaviour {
                         control.recompensa2 -= 1;
                     }
                     msgPanel.SetActive(true);
-                    audio.PlayOneShot(error, 1.0f);
+                    audio.PlayOneShot(error, 5.0f);
 
                 }
             }
