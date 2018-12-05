@@ -17069,6 +17069,7 @@ MonoBehaviour:
   timer: {fileID: 531873255}
   audio: {fileID: 0}
   cogerBandeja: {fileID: 8300000, guid: 8961f65e954fb684ba469d37e8ebd265, type: 3}
+  mal: {fileID: 8300000, guid: c89488af0a19e1c4092e451dea2ec3a5, type: 3}
   msgPanel: {fileID: 539572082}
   msgText: {fileID: 2069354108}
 --- !u!82 &1073326478

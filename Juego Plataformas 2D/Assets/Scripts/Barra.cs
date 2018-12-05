@@ -11,6 +11,7 @@ public class Barra : MonoBehaviour {
 
     public AudioSource audio;
     public AudioClip cogerBandeja;
+    public AudioClip mal;
 
     //private float time; 
 
@@ -114,6 +115,7 @@ public class Barra : MonoBehaviour {
                             //Debug.Log("Ya llevas encima la maleta " + player.nMaleta);
                             msgText.text = "¡Tienes 2 manos pero cabeza solo para 1 bandeja!";
                             msgPanel.SetActive(true);
+                            audio.PlayOneShot(mal, 1.0f);
 
                         }
                     }
