@@ -9,6 +9,9 @@ public class Barra : MonoBehaviour {
     public List<int> iList;
     public Timer2 timer;
 
+    public AudioSource audio;
+    public AudioClip cogerBandeja;
+
     //private float time; 
 
     [SerializeField] GameObject msgPanel;
@@ -24,6 +27,8 @@ public class Barra : MonoBehaviour {
         inside = false;
         introduction = false;
         player.nBandeja = 0;
+
+        audio = GetComponent<AudioSource>();
 
         iList = new List<int>();
 
@@ -97,7 +102,7 @@ public class Barra : MonoBehaviour {
                     {
                         if (player.nBandeja == 0)
                         {
-                            
+                            audio.PlayOneShot(cogerBandeja, 1.0f);
                             player.nBandeja = iList[Random.Range(0, iList.Count - 1)];
                             msgText.text = "Aquí tienes, a prisa";
                             msgPanel.SetActive(true);

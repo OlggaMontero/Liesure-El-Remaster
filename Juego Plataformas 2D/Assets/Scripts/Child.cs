@@ -12,9 +12,13 @@ public class Child : MonoBehaviour {
     private Vector2 left, right;
     private bool ida;
 
+    public AudioSource audio;
+    public AudioClip risa;
+
     // Use this for initialization
     void Start () {
         ida = true;
+        audio = GetComponent<AudioSource>();
         if (target != null)
         {
             target.parent = null;
@@ -63,6 +67,7 @@ public class Child : MonoBehaviour {
     {
         if (col.gameObject.tag == "Player")
         {
+            audio.PlayOneShot(risa, 1.0f);
             if (ida)
             {
                 rb2d.AddForce(left * 5, ForceMode2D.Impulse);
