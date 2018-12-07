@@ -884,6 +884,12 @@ Prefab:
       propertyPath: m_Name
       value: Puerta 331
       objectReference: {fileID: 0}
+    - target: {fileID: 212032949563342120, guid: cf1363d8881436948841df0abb9beef3,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf1363d8881436948841df0abb9beef3, type: 2}
   m_IsPrefabAsset: 0
@@ -1175,6 +1181,12 @@ Prefab:
       propertyPath: m_Name
       value: Puerta 53
       objectReference: {fileID: 0}
+    - target: {fileID: 212032949563342120, guid: cf1363d8881436948841df0abb9beef3,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf1363d8881436948841df0abb9beef3, type: 2}
   m_IsPrefabAsset: 0
@@ -1779,7 +1791,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4d0dd2487a7b9ea44ad2713877d43c46, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2101,6 +2113,12 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1785744818}
+    - target: {fileID: 212006159551886126, guid: 2676b83756aefff4ba16f5155213d00d,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2676b83756aefff4ba16f5155213d00d, type: 2}
   m_IsPrefabAsset: 0
@@ -2428,7 +2446,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4d0dd2487a7b9ea44ad2713877d43c46, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2643,6 +2661,12 @@ Prefab:
       propertyPath: m_Name
       value: Puerta 46
       objectReference: {fileID: 0}
+    - target: {fileID: 212032949563342120, guid: cf1363d8881436948841df0abb9beef3,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf1363d8881436948841df0abb9beef3, type: 2}
   m_IsPrefabAsset: 0
@@ -3015,6 +3039,12 @@ Prefab:
       propertyPath: m_Name
       value: Puerta 531
       objectReference: {fileID: 0}
+    - target: {fileID: 212032949563342120, guid: cf1363d8881436948841df0abb9beef3,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf1363d8881436948841df0abb9beef3, type: 2}
   m_IsPrefabAsset: 0
@@ -5539,7 +5569,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4d0dd2487a7b9ea44ad2713877d43c46, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6613,7 +6643,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4d0dd2487a7b9ea44ad2713877d43c46, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7263,7 +7293,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4d0dd2487a7b9ea44ad2713877d43c46, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7801,7 +7831,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4d0dd2487a7b9ea44ad2713877d43c46, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8049,6 +8079,12 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1785744818}
+    - target: {fileID: 212006159551886126, guid: 2676b83756aefff4ba16f5155213d00d,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2676b83756aefff4ba16f5155213d00d, type: 2}
   m_IsPrefabAsset: 0
@@ -8400,6 +8436,12 @@ Prefab:
       propertyPath: m_Name
       value: Puerta 73
       objectReference: {fileID: 0}
+    - target: {fileID: 212032949563342120, guid: cf1363d8881436948841df0abb9beef3,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf1363d8881436948841df0abb9beef3, type: 2}
   m_IsPrefabAsset: 0
@@ -11007,6 +11049,12 @@ Prefab:
       propertyPath: m_Name
       value: Puerta 7
       objectReference: {fileID: 0}
+    - target: {fileID: 212032949563342120, guid: cf1363d8881436948841df0abb9beef3,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf1363d8881436948841df0abb9beef3, type: 2}
   m_IsPrefabAsset: 0
@@ -11576,6 +11624,12 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1785744818}
+    - target: {fileID: 212006159551886126, guid: 2676b83756aefff4ba16f5155213d00d,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2676b83756aefff4ba16f5155213d00d, type: 2}
   m_IsPrefabAsset: 0
@@ -12201,6 +12255,12 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1785744818}
+    - target: {fileID: 212006159551886126, guid: 2676b83756aefff4ba16f5155213d00d,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a7bde6e77abb37489787b51e7847607,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2676b83756aefff4ba16f5155213d00d, type: 2}
   m_IsPrefabAsset: 0
