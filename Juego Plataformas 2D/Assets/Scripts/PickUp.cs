@@ -15,6 +15,8 @@ public class PickUp : MonoBehaviour
     [SerializeField] GameObject msgPanel;
     [SerializeField] Text msgText;
 
+    [SerializeField] GameObject msgPanelAux;
+
     public AudioSource audio;
     public AudioClip zip;
     public AudioClip mal;
@@ -44,6 +46,7 @@ public class PickUp : MonoBehaviour
         iList.Add(634);
 
         msgPanel.SetActive(false);
+        msgPanelAux.SetActive(false);
 
         audio = GetComponent<AudioSource>();
 
@@ -60,7 +63,7 @@ public class PickUp : MonoBehaviour
         
         if (timer.inicio)
         {
-            if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+            if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
             {
                 if (player != null)                             //Hay que tener cuidado con las referencias NULL
                 {
@@ -72,6 +75,7 @@ public class PickUp : MonoBehaviour
                             player.nMaleta = iList[Random.Range(0, iList.Count - 1)];
                             msgText.text = "Toma la maleta " + player.nMaleta;
                             msgPanel.SetActive(true);
+                            msgPanelAux.SetActive(true);
                             audio.PlayOneShot(zip, 1.0f);
 
                         }
@@ -81,6 +85,7 @@ public class PickUp : MonoBehaviour
                             //Debug.Log("Ya llevas encima la maleta " + player.nMaleta);
                             msgText.text = "Ya llevas encima la maleta " + player.nMaleta;
                             msgPanel.SetActive(true);
+                            msgPanelAux.SetActive(true);
                             audio.PlayOneShot(mal, 1.0f);
 
                         }
@@ -110,6 +115,7 @@ public class PickUp : MonoBehaviour
         {
             inside = false;
             msgPanel.SetActive(false);
+            msgPanelAux.SetActive(false);
 
         }
     }

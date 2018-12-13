@@ -36,7 +36,7 @@ public class Comanda : MonoBehaviour {
         
         
 
-        if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+        if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
         {
             if (player != null)                             //Hay que tener cuidado con las referencias NULL
             {

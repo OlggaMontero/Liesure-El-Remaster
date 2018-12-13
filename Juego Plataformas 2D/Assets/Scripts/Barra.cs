@@ -84,7 +84,7 @@ public class Barra : MonoBehaviour {
 
         if (timer.inicio == false)
         {
-            if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+            if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
             {
                 introduction = true;
                 msgText.text = "Las bandejas de plata son para las mesas que piden y las de oro para el buffet. ¡Cuidado con los hambrientos o te quedarás sin comanda!";
@@ -95,7 +95,7 @@ public class Barra : MonoBehaviour {
 
         else if (timer.inicio)
         {
-            if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+            if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
             {
                 if (player != null)                             //Hay que tener cuidado con las referencias NULL
                 {

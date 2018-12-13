@@ -21,6 +21,8 @@ public class Deliver : MonoBehaviour {
     [SerializeField] GameObject msgPanel;
     [SerializeField] Text msgText;
 
+    [SerializeField] GameObject msgPanelAux;
+
     private bool inside;
     //private float time;
     //private bool fin;
@@ -32,6 +34,7 @@ public class Deliver : MonoBehaviour {
         audio = GetComponent<AudioSource>();
 
         msgPanel.SetActive(false);
+        msgPanelAux.SetActive(false);
 
 
 
@@ -46,7 +49,7 @@ public class Deliver : MonoBehaviour {
         //time += Time.deltaTime;
         
 
-        if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+        if (inside == true && player.pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
         {
             if (player != null)                             //Hay que tener cuidado con las referencias NULL
             {
@@ -57,6 +60,7 @@ public class Deliver : MonoBehaviour {
                         //Debug.Log("¡GENIAL! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
                         msgText.text = "¡GENIAL! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab;
                         msgPanel.SetActive(true);
+                        msgPanelAux.SetActive(true);
                         timer.time += 10;
                         audio.PlayOneShot(tada, 1.0f);
 
@@ -67,6 +71,7 @@ public class Deliver : MonoBehaviour {
                         //Debug.Log("¡OH NO! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
                         msgText.text = "¡OH NO! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab;
                         msgPanel.SetActive(true);
+                        msgPanelAux.SetActive(true);
                         timer.time -= 10;
                         audio.PlayOneShot(buzz, 1.0f);
                     }
@@ -81,6 +86,7 @@ public class Deliver : MonoBehaviour {
                     //Debug.Log("No tienes ninguna maleta encima");
                     msgText.text = "No tienes ninguna maleta encima";
                     msgPanel.SetActive(true);
+                    msgPanelAux.SetActive(true);
                     audio.PlayOneShot(error, 1.0f);
                 }
             }
@@ -106,6 +112,7 @@ public class Deliver : MonoBehaviour {
         {
             inside = false;
             msgPanel.SetActive(false);
+            msgPanelAux.SetActive(false);
 
         }
     }

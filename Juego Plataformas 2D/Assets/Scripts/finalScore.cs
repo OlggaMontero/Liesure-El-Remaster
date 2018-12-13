@@ -46,7 +46,7 @@ public class finalScore : MonoBehaviour {
 
         msgText.text = frases[index];
 
-        if ((Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+        if ((Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
         {
             index++;
         }
