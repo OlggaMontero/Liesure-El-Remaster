@@ -15,11 +15,6 @@ public class PickUp : MonoBehaviour
     [SerializeField] GameObject msgPanel;
     [SerializeField] Text msgText;
 
-    public AudioSource audio;
-    public AudioClip zip;
-    public AudioClip mal;
-
-
 
     private bool inside;
 
@@ -44,8 +39,6 @@ public class PickUp : MonoBehaviour
         iList.Add(634);
 
         msgPanel.SetActive(false);
-
-        audio = GetComponent<AudioSource>();
 
         //time = 0.0f;
 
@@ -72,7 +65,6 @@ public class PickUp : MonoBehaviour
                             player.nMaleta = iList[Random.Range(0, iList.Count - 1)];
                             msgText.text = "Toma la maleta " + player.nMaleta;
                             msgPanel.SetActive(true);
-                            audio.PlayOneShot(zip, 1.0f);
 
                         }
 
@@ -81,7 +73,6 @@ public class PickUp : MonoBehaviour
                             //Debug.Log("Ya llevas encima la maleta " + player.nMaleta);
                             msgText.text = "Ya llevas encima la maleta " + player.nMaleta;
                             msgPanel.SetActive(true);
-                            audio.PlayOneShot(mal, 1.0f);
 
                         }
                     }
