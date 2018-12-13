@@ -15,14 +15,20 @@ public class Comanda : MonoBehaviour {
     //será true para la mesa buffet y false para el resto
     public updScore control;
 
+    public AudioSource audio;
+    public AudioClip bien;
+    public AudioClip mal;
+    public AudioClip error;
+
     private bool inside;
     
 	
     // Use this for initialization
 	void Start () {
         inside = false;
-        
-	}
+
+        audio = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -48,7 +54,7 @@ public class Comanda : MonoBehaviour {
                             hambre.auxTime = 0;
                             counter.contador--;
                             //timer.time += 10;
-                            //audio.PlayOneShot(tada, 1.0f);
+                            audio.PlayOneShot(bien, 1.0f);
 
                         }
 
@@ -62,7 +68,7 @@ public class Comanda : MonoBehaviour {
                             }
                             msgPanel.SetActive(true);
                             //timer.time -= 10;
-                            //audio.PlayOneShot(buzz, 1.0f);
+                            audio.PlayOneShot(error, 5.0f);
                         }
                     }
 
@@ -74,6 +80,7 @@ public class Comanda : MonoBehaviour {
                             control.recompensa2 -= 10;
                         }
                         msgPanel.SetActive(true);
+                        audio.PlayOneShot(mal, 1.0f);
                     }
 
                     barra.iList.Remove(player.nBandeja);
@@ -98,7 +105,7 @@ public class Comanda : MonoBehaviour {
                             hambre.auxTime = 0;
                             counter.contador--;
                             //timer.time += 10;
-                            //audio.PlayOneShot(tada, 1.0f);
+                            audio.PlayOneShot(error, 5.0f);
 
                         }
 
@@ -112,7 +119,7 @@ public class Comanda : MonoBehaviour {
                             }
                             msgPanel.SetActive(true);
                             //timer.time -= 10;
-                            //audio.PlayOneShot(buzz, 1.0f);
+                            audio.PlayOneShot(mal, 1.0f);
                         }
                     }
 
@@ -121,6 +128,7 @@ public class Comanda : MonoBehaviour {
                         msgText.text = "¡¡Está todo buenísimo!!";
                         control.recompensa2 += 10;
                         msgPanel.SetActive(true);
+                        audio.PlayOneShot(bien, 1.0f);
                     }
 
                     barra.iList.Remove(player.nBandeja);
@@ -136,7 +144,7 @@ public class Comanda : MonoBehaviour {
                         control.recompensa2 -= 1;
                     }
                     msgPanel.SetActive(true);
-                    //audio.PlayOneShot(error, 1.0f);
+                    audio.PlayOneShot(error, 5.0f);
 
                 }
             }
